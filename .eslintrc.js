@@ -14,7 +14,7 @@ module.exports = {
     // "no-var": 2, // 不能使用 var 定义变量
   },
   plugins: ["import"], // 解决动态导入语法报错
-  parser: "babel-eslint",
+  parser: ["babel-eslint", "@babel/eslint-parser"],
   globals: {
     Promise: "readonly",
   },
